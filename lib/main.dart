@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:apivideo_live_stream/apivideo_live_stream.dart';
 import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:untitled/speech.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
 
 void main() {
@@ -164,6 +165,9 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
+                    const SizedBox(height: 30),
+                    const AudioRecognize(),
+                    const Spacer(),
                     Padding(padding: const EdgeInsets.symmetric(horizontal: 5),
                         child: Stack(children: [
                           Text(
